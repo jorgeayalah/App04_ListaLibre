@@ -8,18 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		BB45053A275C51760066CE11 /* App04_ListaLibreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB450539275C51760066CE11 /* App04_ListaLibreApp.swift */; };
-		BB45053C275C51760066CE11 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB45053B275C51760066CE11 /* ContentView.swift */; };
+		BB45053C275C51760066CE11 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB45053B275C51760066CE11 /* ListView.swift */; };
 		BB45053E275C517F0066CE11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB45053D275C517F0066CE11 /* Assets.xcassets */; };
 		BB450541275C517F0066CE11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB450540275C517F0066CE11 /* Preview Assets.xcassets */; };
+		BB45054C275C54BA0066CE11 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB45054B275C54BA0066CE11 /* CustomNavigationBar.swift */; };
+		BB450551275C554C0066CE11 /* SongView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB450550275C554C0066CE11 /* SongView.swift */; };
+		BB450554275C55D00066CE11 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB450553275C55D00066CE11 /* Song.swift */; };
+		BB450557275C5CF20066CE11 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB450556275C5CF20066CE11 /* AlbumModel.swift */; };
+		BB45055D275C68650066CE11 /* UIColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB45055C275C68650066CE11 /* UIColorHex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BB450536275C51760066CE11 /* App04_ListaLibre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App04_ListaLibre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB450539275C51760066CE11 /* App04_ListaLibreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App04_ListaLibreApp.swift; sourceTree = "<group>"; };
-		BB45053B275C51760066CE11 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BB45053B275C51760066CE11 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		BB45053D275C517F0066CE11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB450540275C517F0066CE11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BB450542275C517F0066CE11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB45054B275C54BA0066CE11 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		BB450550275C554C0066CE11 /* SongView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongView.swift; sourceTree = "<group>"; };
+		BB450553275C55D00066CE11 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		BB450556275C5CF20066CE11 /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
+		BB45055C275C68650066CE11 /* UIColorHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorHex.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +63,13 @@
 			isa = PBXGroup;
 			children = (
 				BB450539275C51760066CE11 /* App04_ListaLibreApp.swift */,
-				BB45053B275C51760066CE11 /* ContentView.swift */,
+				BB450549275C54600066CE11 /* Views */,
 				BB45053D275C517F0066CE11 /* Assets.xcassets */,
+				BB45054E275C54C50066CE11 /* Models */,
 				BB450542275C517F0066CE11 /* Info.plist */,
+				BB45055B275C68470066CE11 /* Utilities */,
+				BB45054B275C54BA0066CE11 /* CustomNavigationBar.swift */,
+				BB450553275C55D00066CE11 /* Song.swift */,
 				BB45053F275C517F0066CE11 /* Preview Content */,
 			);
 			path = App04_ListaLibre;
@@ -67,6 +81,31 @@
 				BB450540275C517F0066CE11 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BB450549275C54600066CE11 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BB45053B275C51760066CE11 /* ListView.swift */,
+				BB450550275C554C0066CE11 /* SongView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BB45054E275C54C50066CE11 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BB450556275C5CF20066CE11 /* AlbumModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BB45055B275C68470066CE11 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BB45055C275C68650066CE11 /* UIColorHex.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +177,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB45053C275C51760066CE11 /* ContentView.swift in Sources */,
+				BB45055D275C68650066CE11 /* UIColorHex.swift in Sources */,
+				BB45054C275C54BA0066CE11 /* CustomNavigationBar.swift in Sources */,
+				BB450557275C5CF20066CE11 /* AlbumModel.swift in Sources */,
+				BB45053C275C51760066CE11 /* ListView.swift in Sources */,
+				BB450551275C554C0066CE11 /* SongView.swift in Sources */,
 				BB45053A275C51760066CE11 /* App04_ListaLibreApp.swift in Sources */,
+				BB450554275C55D00066CE11 /* Song.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
