@@ -26,6 +26,7 @@ struct SongView: View {
                         .foregroundColor(song.dark ? .white : .black)
                 }
                 HStack{
+                    Image(systemName: "music.mic")
                     ForEach(song.artists, id: \.self){ artist in
                         Text(artist)
                             .foregroundColor(song.dark ? .white : .black)
