@@ -32,8 +32,11 @@ struct SongView: View {
                             .foregroundColor(song.dark ? .white : .black)
                     }
                 }
-                Text(cover)
-                    .foregroundColor(song.dark ? .white : .black)
+                HStack{
+                    Image(systemName: "rectangle.stack.fill")
+                    Text(cover)
+                        .foregroundColor(song.dark ? .white : .black)
+                }
             }
         }
         .edgesIgnoringSafeArea(.bottom)
